@@ -1,0 +1,2 @@
+# automation_utility
+GitHub Actionで諸々自動化するためのリポジトリ
