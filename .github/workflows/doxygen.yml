@@ -13,11 +13,19 @@ jobs:
     steps:
       - name: Checkout develop branch
         uses: actions/checkout@v3
+        with:
+          path: develop
 
       - name: Doxygen Action
         uses: mattnotmitt/doxygen-action@1.9.5
 
-      - name: Checkout docs branch, commit, and push. 
+      - name: Checkout docs branch
+        uses: actions/checkout@v3
+        with:
+          ref: docs
+          path: docs
+
+      - name: Git config, commit, and push. 
         run: |
           git config --local user.email "okano.development@gmail.com"
           git config --local user.name "okano-tomoyuki"
