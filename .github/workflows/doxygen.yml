@@ -11,14 +11,13 @@ jobs:
     permissions: 
       contents: write
     steps:
+      - name: Checkout develop branch
+        uses: actions/checkout@v4
+
       - name: Checkout docs branch
         uses: actions/checkout@v4
         with:
           ref: docs
-
-      - name: merge develop branch
-        run: |
-          git merge develop
 
       - name: Doxygen Action
         uses: mattnotmitt/doxygen-action@1.9.5
