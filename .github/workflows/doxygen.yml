@@ -30,4 +30,3 @@ jobs:
           git add .
           git commit -m "add action #"$(echo ${GITHUB_SHA::7})
           git push origin docs
-        working-directory: 'docs'
