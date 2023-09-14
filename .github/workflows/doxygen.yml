@@ -11,14 +11,8 @@ jobs:
     permissions: 
       contents: write
     steps:
-      - name: Checkout docs branch
+      - name: Checkout develop branch
         uses: actions/checkout@v4
-        with:
-          ref: docs
-
-      - name: pull develop branch
-        run: |
-          git pull origin develop
 
       - name: Doxygen Action
         uses: mattnotmitt/doxygen-action@1.9.5
@@ -27,6 +21,7 @@ jobs:
         run: |
           git config --local user.email "okano.development@gmail.com"
           git config --local user.name "okano-tomoyuki"
+          git pull origin
           git add .
           git commit -m "add action #"$(echo ${GITHUB_SHA::7})
-          git push origin docs
+          git push origin HEAD:docs
