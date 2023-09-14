@@ -1,0 +1,18 @@
+digraph "Share::Group"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="Share::Group",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" name" ];
+  Node2 [label="std::string",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="std::basic_string\<\l Char \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" leader" ];
+  Node4 [label="Share::Person",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$de/d5c/structShare_1_1Person.html",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="darkorchid3",style="dashed",label=" email\nname" ];
+  Node5 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" member" ];
+  Node5 [label="std::vector\< Share\l::Person \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="darkorchid3",style="dashed",label=" elements" ];
+}
