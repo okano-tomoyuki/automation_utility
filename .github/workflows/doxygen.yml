@@ -16,9 +16,9 @@ jobs:
         with:
           ref: docs
 
-      - name: pull develop branch
+      - name: merge develop branch
         run: |
-          git pull origin develop
+          git merge develop
 
       - name: Doxygen Action
         uses: mattnotmitt/doxygen-action@1.9.5
