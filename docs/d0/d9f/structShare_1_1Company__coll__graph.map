@@ -1,4 +1,11 @@
 <map id="Share::Company" name="Share::Company">
-<area shape="rect" id="node1" title=" " alt="" coords="5,93,121,119"/>
-<area shape="rect" id="node2" href="$de/d5c/structShare_1_1Person.html" title=" " alt="" coords="12,5,115,31"/>
+<area shape="rect" id="node1" title=" " alt="" coords="65,769,181,795"/>
+<area shape="rect" id="node2" title=" " alt="" coords="65,95,143,120"/>
+<area shape="rect" id="node4" href="$de/d5c/structShare_1_1Person.html" title=" " alt="" coords="135,197,238,223"/>
+<area shape="rect" id="node6" href="$d1/d18/structShare_1_1Department.html" title=" " alt="" coords="161,579,290,604"/>
+<area shape="rect" id="node8" href="$de/d58/structShare_1_1Group.html" title=" " alt="" coords="339,388,437,413"/>
+<area shape="rect" id="node3" title=" " alt="" coords="42,5,166,45"/>
+<area shape="rect" id="node9" title=" " alt="" coords="225,285,351,325"/>
+<area shape="rect" id="node5" title=" " alt="" coords="161,667,287,707"/>
+<area shape="rect" id="node7" title=" " alt="" coords="289,476,415,516"/>
 </map>
