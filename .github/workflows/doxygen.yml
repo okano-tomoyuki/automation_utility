@@ -18,8 +18,6 @@ jobs:
 
       - name: pull develop branch
         run: |
-          git config --local user.email "okano.development@gmail.com"
-          git config --local user.name "okano-tomoyuki"
           git pull origin develop
 
       - name: Doxygen Action
@@ -27,6 +25,8 @@ jobs:
 
       - name: Git config, commit, and push. 
         run: |
+          git config --local user.email "okano.development@gmail.com"
+          git config --local user.name "okano-tomoyuki"
           git add .
           git commit -m "add action #"$(echo ${GITHUB_SHA::7})
           git push origin docs
