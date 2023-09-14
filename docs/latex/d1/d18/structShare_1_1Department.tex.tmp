@@ -1,0 +1,51 @@
+\hypertarget{structShare_1_1Department}{}\doxysection{Share\+::Department Struct Reference}
+\label{structShare_1_1Department}\index{Share::Department@{Share::Department}}
+
+
+{\ttfamily \#include $<$company.\+hpp$>$}
+
+
+
+Collaboration diagram for Share\+::Department\+:
+% FIG 0
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structShare_1_1Department_ab0c906abeb1c804ca76985959b444d6b}\label{structShare_1_1Department_ab0c906abeb1c804ca76985959b444d6b}} 
+int {\bfseries id}
+\item 
+std\+::string \mbox{\hyperlink{structShare_1_1Department_a01b3f7348b129a02334d9a60201d8ff0}{name}}
+\item 
+\mbox{\hyperlink{structShare_1_1Person}{Person}} \mbox{\hyperlink{structShare_1_1Department_a4e63e1f32bca7d53f6b3e3783ed3f21b}{leader}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structShare_1_1Group}{Group}} $>$ \mbox{\hyperlink{structShare_1_1Department_a9089748c2208de4221f98d6b3bccd5d8}{groups}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+部署構造体 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structShare_1_1Department_a9089748c2208de4221f98d6b3bccd5d8}\label{structShare_1_1Department_a9089748c2208de4221f98d6b3bccd5d8}} 
+\index{Share::Department@{Share::Department}!groups@{groups}}
+\index{groups@{groups}!Share::Department@{Share::Department}}
+\doxysubsubsection{\texorpdfstring{groups}{groups}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structShare_1_1Group}{Group}}$>$ Share\+::\+Department\+::groups}
+
+!\texorpdfstring{$<$}{<} 部署長 \mbox{\Hypertarget{structShare_1_1Department_a4e63e1f32bca7d53f6b3e3783ed3f21b}\label{structShare_1_1Department_a4e63e1f32bca7d53f6b3e3783ed3f21b}} 
+\index{Share::Department@{Share::Department}!leader@{leader}}
+\index{leader@{leader}!Share::Department@{Share::Department}}
+\doxysubsubsection{\texorpdfstring{leader}{leader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structShare_1_1Person}{Person}} Share\+::\+Department\+::leader}
+
+!\texorpdfstring{$<$}{<} 部署名 \mbox{\Hypertarget{structShare_1_1Department_a01b3f7348b129a02334d9a60201d8ff0}\label{structShare_1_1Department_a01b3f7348b129a02334d9a60201d8ff0}} 
+\index{Share::Department@{Share::Department}!name@{name}}
+\index{name@{name}!Share::Department@{Share::Department}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Share\+::\+Department\+::name}
+
+!\texorpdfstring{$<$}{<} 4桁の部署\+ID 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/share/\mbox{\hyperlink{company_8hpp}{company.\+hpp}}\end{DoxyCompactItemize}

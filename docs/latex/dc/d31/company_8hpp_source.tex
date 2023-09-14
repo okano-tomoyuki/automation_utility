@@ -1,0 +1,52 @@
+\hypertarget{company_8hpp_source}{}\doxysection{company.\+hpp}
+\label{company_8hpp_source}\index{include/share/company.hpp@{include/share/company.hpp}}
+\mbox{\hyperlink{company_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef \_SHARE\_COMPANY\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define \_SHARE\_COMPANY\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{19 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceShare}{Share}}}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{23 \textcolor{keyword}{struct }\mbox{\hyperlink{structShare_1_1Person}{Person}}}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25     \textcolor{keywordtype}{int} id;                                     }
+\DoxyCodeLine{26     std::string \mbox{\hyperlink{structShare_1_1Person_aaefb56fa902ef4888b39ed1db2ae2087}{name}};                           }
+\DoxyCodeLine{27     std::string \mbox{\hyperlink{structShare_1_1Person_a81bcc1afa866873de187d36693ff2326}{email}};                          }
+\DoxyCodeLine{28     \textcolor{keywordtype}{double} \mbox{\hyperlink{structShare_1_1Person_af490d582e05378f19c79209781d7d790}{tall}};                                }
+\DoxyCodeLine{29     \textcolor{keywordtype}{double} \mbox{\hyperlink{structShare_1_1Person_adf0554fa63eccf6ee6d82acb1e0b26da}{weight}};                              }
+\DoxyCodeLine{30 \};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{33 \textcolor{keyword}{struct }\mbox{\hyperlink{structShare_1_1Group}{Group}}}
+\DoxyCodeLine{34 \{}
+\DoxyCodeLine{35     \textcolor{keywordtype}{int} id;                                     }
+\DoxyCodeLine{36     std::string \mbox{\hyperlink{structShare_1_1Group_a7048acb27ea3339111269cdd632d2aaf}{name}};                           }
+\DoxyCodeLine{37     \mbox{\hyperlink{structShare_1_1Person}{Person}} \mbox{\hyperlink{structShare_1_1Group_a495bf00bda8d0d9cd5b3ffbea674d80d}{leader}};                              }
+\DoxyCodeLine{38     std::vector<Person> \mbox{\hyperlink{structShare_1_1Group_a3b31e1faa7fb4b4ce63382677394d315}{member}};                 }
+\DoxyCodeLine{39 \};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{42 \textcolor{keyword}{struct }\mbox{\hyperlink{structShare_1_1Department}{Department}}}
+\DoxyCodeLine{43 \{}
+\DoxyCodeLine{44     \textcolor{keywordtype}{int} id;                                     }
+\DoxyCodeLine{45     std::string \mbox{\hyperlink{structShare_1_1Department_a01b3f7348b129a02334d9a60201d8ff0}{name}};                           }
+\DoxyCodeLine{46     \mbox{\hyperlink{structShare_1_1Person}{Person}} \mbox{\hyperlink{structShare_1_1Department_a4e63e1f32bca7d53f6b3e3783ed3f21b}{leader}};                              }
+\DoxyCodeLine{47     std::vector<Group> \mbox{\hyperlink{structShare_1_1Department_a9089748c2208de4221f98d6b3bccd5d8}{groups}};                  }
+\DoxyCodeLine{48 \};}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{51 \textcolor{keyword}{struct }\mbox{\hyperlink{structShare_1_1Company}{Company}}}
+\DoxyCodeLine{52 \{}
+\DoxyCodeLine{53     \textcolor{keywordtype}{int} id;                                     }
+\DoxyCodeLine{54     std::string \mbox{\hyperlink{structShare_1_1Company_a66cb231edc3cbf547ae70e37dd3feac4}{name}};                           }
+\DoxyCodeLine{55     \mbox{\hyperlink{structShare_1_1Person}{Person}} \mbox{\hyperlink{structShare_1_1Company_affb32464ec87dc9591ed1268982e05d2}{president}};                           }
+\DoxyCodeLine{56     std::vector<Department> \mbox{\hyperlink{structShare_1_1Company_a100095cb50297d51f82f3a24ee043600}{departments}};        }
+\DoxyCodeLine{57 \};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 \} \textcolor{comment}{// Share}}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
