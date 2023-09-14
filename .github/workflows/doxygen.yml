@@ -23,4 +23,4 @@ jobs:
           git config --local user.name "okano-tomoyuki"
           git add .
           git commit -m "add action #"$(echo ${GITHUB_SHA::7})
-          git push origin docs
+          git push origin HEAD:docs
