@@ -21,6 +21,7 @@ jobs:
         run: |
           git config --local user.email "okano.development@gmail.com"
           git config --local user.name "okano-tomoyuki"
+          git pull origin
           git add .
           git commit -m "add action #"$(echo ${GITHUB_SHA::7})
           git push origin HEAD:docs
